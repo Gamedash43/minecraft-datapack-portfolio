@@ -18,7 +18,7 @@
     header h1 { font-size: 2rem; }
 
     .profile { display: flex; align-items: center; margin-bottom: 60px; }
-    .profile img { width: 150px; height: 150px; object-fit: cover; margin-right: 30px; }
+    .profile img { max-width: 150px; height: auto; object-fit: contain; margin-right: 30px; }
     .profile p { font-size: 1.1rem; max-width: 600px; }
 
     .datapack { margin-bottom: 60px; }
@@ -42,19 +42,19 @@
 
     <section class="profile">
       <img src="profile_picture.png" alt="Profile Picture">
-      <p>Hello! I’m a Computer Science undergraduate with over six years of experience crafting Minecraft datapacks and command block creations for servers and survival gameplay. I leverage Python scripting to automate complex tasks, turning what was once manual into seamless in-game systems. On this page you’ll find a showcase of my favorite projects and the skills each demonstrates.</p>
+      <p>Hey! I’m a CS undergrad who loves building Minecraft datapacks for servers and survival. With over six years of experience crafting datapacks and command-block systems, I use Python to automate the tough parts so you can focus on the fun. Check out my projects below and give them a spin!</p>
     </section>
 
     <!-- Datapack 1 -->
     <section class="datapack">
       <h2>Datapack Title One</h2>
       <div class="media-container">
-        <!-- To embed video, uncomment the iframe below: -->
+        <!-- To embed video, uncomment: -->
         <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen title="Datapack One Demo"></iframe> -->
-        <!-- Or to show an image, uncomment the img below: -->
+        <!-- Or to show an image, uncomment: -->
         <!-- <img src="datapack1_preview.png" alt="Datapack One Preview"> -->
       </div>
-      <p>This datapack introduces custom crafting mechanics that streamline resource management on survival servers. It demonstrates proficiency in JSON crafting tables, scoreboards, and Python-based data generation.</p>
+      <p>This datapack introduces custom crafting mechanics that streamline resource management on survival servers. It demonstrates proficiency in JSON crafting tables, scoreboards, and Python-driven data generation.</p>
     </section>
 
     <!-- Datapack 2 -->
@@ -88,9 +88,22 @@
     </section>
 
     <footer>
-      Fancy trying them yourself? Most of these datapacks are available for download on my Modrinth—check them out at <a href="https://modrinth.com/user/Gamedash43" target="_blank">Gamedash43 on Modrinth</a>!
+      <p>Want to chat or commission custom work? Hit me up on Discord at <strong>@gamedash43</strong>.</p>
+      <p>Commission on <a href="https://ko-fi.com/c/836e1bdce4" target="_blank">Ko-fi</a> (if slots are full, message me on Discord).</p>
+      <p>Download these datapacks on <a href="https://modrinth.com/user/Gamedash43" target="_blank">Modrinth</a>.</p>
     </footer>
 
   </div>
+
+  <!-- Ko-fi Floating Chat Widget -->
+  <script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js"></script>
+  <script>
+    kofiWidgetOverlay.draw('gamedash43', {
+      'type': 'floating-chat',
+      'floating-chat.donateButton.text': 'Support me',
+      'floating-chat.donateButton.background-color': '#00b9fe',
+      'floating-chat.donateButton.text-color': '#fff'
+    });
+  </script>
 </body>
 </html>
