@@ -4,32 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gamedash43's Datapack Portfolio</title>
+  <link rel="icon" href="logo.png" type="image/png">
   <style>
     /* Reset & base */
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #fafafa; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; background-color: #f0f2f5; }
     a { color: #0066cc; text-decoration: none; }
     a:hover { text-decoration: underline; }
 
-    /* Layout */
-    .container { max-width: 800px; margin: 40px auto; padding: 0 20px; }
-    header { display: flex; align-items: center; margin-bottom: 40px; }
+    /* Container */
+    .container { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+
+    /* Header */
+    header { display: flex; align-items: center; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-bottom: 40px; }
     header img { height: 60px; margin-right: 20px; }
     header h1 { font-size: 2rem; }
 
-    .profile { display: flex; align-items: center; margin-bottom: 60px; }
+    /* Profile */
+    .profile { display: flex; align-items: center; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); margin-bottom: 40px; }
     .profile img { max-width: 150px; height: auto; object-fit: contain; margin-right: 30px; }
     .profile p { font-size: 1.1rem; max-width: 600px; }
 
-    .datapack { margin-bottom: 60px; }
-    .datapack h2 { font-size: 1.5rem; margin-bottom: 10px; }
+    /* Datapacks */
+    .datapack { background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }
+    .datapack h2 { font-size: 1.5rem; margin-bottom: 15px; }
     .datapack p { margin-bottom: 20px; }
 
     .media-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin-bottom: 20px; }
     .media-container iframe,
     .media-container img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; object-fit: contain; }
 
-    footer { text-align: center; font-size: 0.9rem; color: #666; margin-top: 80px; }
+    /* Footer */
+    footer { text-align: center; font-size: 0.9rem; color: #555; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.05); margin-top: 40px; }
+    footer p { margin-bottom: 10px; }
+
+    /* Highlighted Ko-fi button */
+    .kofi-button {
+      display: inline-block;
+      background-color: #00b9fe;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-align: center;
+      font-size: 1rem;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 15px 0;
+    }
   </style>
 </head>
 <body>
@@ -45,19 +66,17 @@
       <p>Hey! I’m a CS undergrad who loves building Minecraft datapacks for servers and survival. With over six years of experience crafting datapacks and command-block systems, I use Python to automate the tough parts so you can focus on the fun. Check out my projects below and give them a spin!</p>
     </section>
 
-    <!-- Datapack 1 -->
+    <!-- Datapack Entries -->
     <section class="datapack">
       <h2>Datapack Title One</h2>
       <div class="media-container">
-        <!-- To embed video, uncomment: -->
+        <!-- Uncomment for video -->
         <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen title="Datapack One Demo"></iframe> -->
-        <!-- Or to show an image, uncomment: -->
+        <!-- Uncomment for image -->
         <!-- <img src="datapack1_preview.png" alt="Datapack One Preview"> -->
       </div>
       <p>This datapack introduces custom crafting mechanics that streamline resource management on survival servers. It demonstrates proficiency in JSON crafting tables, scoreboards, and Python-driven data generation.</p>
     </section>
-
-    <!-- Datapack 2 -->
     <section class="datapack">
       <h2>Datapack Title Two</h2>
       <div class="media-container">
@@ -66,8 +85,6 @@
       </div>
       <p>Featuring a dynamic boss battle system, this pack showcases advanced command block logic and event-driven functions to create engaging PvE encounters.</p>
     </section>
-
-    <!-- Datapack 3 -->
     <section class="datapack">
       <h2>Datapack Title Three</h2>
       <div class="media-container">
@@ -76,8 +93,6 @@
       </div>
       <p>A resource pack enhancer that auto-generates loot tables and custom models, highlighting automated file creation with Python scripts.</p>
     </section>
-
-    <!-- Datapack 4 -->
     <section class="datapack">
       <h2>Datapack Title Four</h2>
       <div class="media-container">
@@ -88,9 +103,11 @@
     </section>
 
     <footer>
-      <p>Want to chat or commission custom work? Hit me up on Discord at <strong>@gamedash43</strong>.</p>
-      <p>Commission on <a href="https://ko-fi.com/c/836e1bdce4" target="_blank">Ko-fi</a> (if slots are full, message me on Discord).</p>
-      <p>Download these datapacks on <a href="https://modrinth.com/user/Gamedash43" target="_blank">Modrinth</a>.</p>
+      <p>Chat on Discord: <strong>@gamedash43</strong> for inquiries or collabs.</p>
+      <!-- Prominent Ko-fi Button -->
+      <a href="https://ko-fi.com/c/836e1bdce4" class="kofi-button" target="_blank">Commission on Ko-fi</a>
+      <p><small>If slots are full, ping me on Discord!</small></p>
+      <p>Download them on <a href="https://modrinth.com/user/Gamedash43" target="_blank">Modrinth</a>.</p>
     </footer>
 
   </div>
