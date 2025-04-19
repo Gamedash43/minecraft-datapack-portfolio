@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,14 +18,16 @@
     header h1 { font-size: 2rem; }
 
     .profile { display: flex; align-items: center; margin-bottom: 60px; }
-    .profile img { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; margin-right: 30px; }
+    .profile img { width: 150px; height: 150px; object-fit: cover; margin-right: 30px; }
     .profile p { font-size: 1.1rem; max-width: 600px; }
 
     .datapack { margin-bottom: 60px; }
     .datapack h2 { font-size: 1.5rem; margin-bottom: 10px; }
     .datapack p { margin-bottom: 20px; }
-    .video-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; }
-    .video-container iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; }
+
+    .media-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 8px; margin-bottom: 20px; }
+    .media-container iframe,
+    .media-container img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; object-fit: contain; }
 
     footer { text-align: center; font-size: 0.9rem; color: #666; margin-top: 80px; }
   </style>
@@ -47,8 +48,11 @@
     <!-- Datapack 1 -->
     <section class="datapack">
       <h2>Datapack Title One</h2>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen title="Datapack One Demo"></iframe>
+      <div class="media-container">
+        <!-- To embed video, uncomment the iframe below: -->
+        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID_1" allowfullscreen title="Datapack One Demo"></iframe> -->
+        <!-- Or to show an image, uncomment the img below: -->
+        <!-- <img src="datapack1_preview.png" alt="Datapack One Preview"> -->
       </div>
       <p>This datapack introduces custom crafting mechanics that streamline resource management on survival servers. It demonstrates proficiency in JSON crafting tables, scoreboards, and Python-based data generation.</p>
     </section>
@@ -56,8 +60,9 @@
     <!-- Datapack 2 -->
     <section class="datapack">
       <h2>Datapack Title Two</h2>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen title="Datapack Two Demo"></iframe>
+      <div class="media-container">
+        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen title="Datapack Two Demo"></iframe> -->
+        <!-- <img src="datapack2_preview.png" alt="Datapack Two Preview"> -->
       </div>
       <p>Featuring a dynamic boss battle system, this pack showcases advanced command block logic and event-driven functions to create engaging PvE encounters.</p>
     </section>
@@ -65,8 +70,9 @@
     <!-- Datapack 3 -->
     <section class="datapack">
       <h2>Datapack Title Three</h2>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen title="Datapack Three Demo"></iframe>
+      <div class="media-container">
+        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID_3" allowfullscreen title="Datapack Three Demo"></iframe> -->
+        <!-- <img src="datapack3_preview.png" alt="Datapack Three Preview"> -->
       </div>
       <p>A resource pack enhancer that auto-generates loot tables and custom models, highlighting automated file creation with Python scripts.</p>
     </section>
@@ -74,14 +80,15 @@
     <!-- Datapack 4 -->
     <section class="datapack">
       <h2>Datapack Title Four</h2>
-      <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" allowfullscreen title="Datapack Four Demo"></iframe>
+      <div class="media-container">
+        <!-- <iframe src="https://www.youtube.com/embed/VIDEO_ID_4" allowfullscreen title="Datapack Four Demo"></iframe> -->
+        <!-- <img src="datapack4_preview.png" alt="Datapack Four Preview"> -->
       </div>
       <p>This project implements a modular permission system for multiplayer servers, leveraging scoreboards and tag-based access controls.</p>
     </section>
 
     <footer>
-      © 2025 Gamedash43. All rights reserved.
+      Fancy trying them yourself? Most of these datapacks are available for download on my Modrinth—check them out at <a href="https://modrinth.com/user/Gamedash43" target="_blank">Gamedash43 on Modrinth</a>!
     </footer>
 
   </div>
